@@ -13,7 +13,7 @@ jobs:
                 node-version: '18'
 
             - name: Install dependancies
-              run:  npm ci --prefix path "02StartingProject"
+              run:  npm ci --prefix  "./02StartingProject"
 
             - name: Run tests
               run: npm test
