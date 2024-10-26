@@ -16,4 +16,4 @@ jobs:
               run:  npm ci --prefix  "./02StartingProject"
 
             - name: Run tests
-              run: npm test
+              run: npm test -prefix  "./02StartingProject"
