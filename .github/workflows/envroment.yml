@@ -1,0 +1,12 @@
+name: Output Information
+on:
+  workflow_dispatch:  # Allows manual trigger of this workflow
+jobs:
+  info:
+    environment: demo
+    env: 
+      demo: ${{ secrets.DEMO }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub Context
+        run: echo "${{ env.demo }}"
