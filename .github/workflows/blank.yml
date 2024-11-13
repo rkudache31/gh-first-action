@@ -4,7 +4,7 @@ on:
 jobs:
   info:
     env: 
-      demo:${{ secrets.DEMOSEC }}
+      demo: ${{ secrets.DEMOSEC }}
     runs-on: ubuntu-latest
     steps:
       - name: Output GitHub Context
