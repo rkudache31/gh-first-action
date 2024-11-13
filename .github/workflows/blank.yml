@@ -3,7 +3,9 @@ on:
   workflow_dispatch:  # Allows manual trigger of this workflow
 jobs:
   info:
+    env: 
+      demo:${{ secrets.DEMOSEC }}
     runs-on: ubuntu-latest
     steps:
       - name: Output GitHub Context
-        run: echo "${{ toJson(github)}}"
+        run: echo "${{ env.demo }}"
